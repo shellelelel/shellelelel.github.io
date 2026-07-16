@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shel Dern's portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="main.css" rel="stylesheet">
 </head>
-  <body class="container">
+
+<body class="container">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
@@ -24,8 +28,8 @@
         </div>
     </nav>
     <div class="row mt-5">
-        <div class="col-lg-5 col-sm-12 text-center">        
-            <img src="image/port_pic.jpg" class="rounded-circle" id="profile-pic"/>
+        <div class="col-lg-5 col-sm-12 text-center">
+            <img src="image/port_pic.jpg" class="rounded-circle" id="profile-pic" />
             <h3 class="pt-4">Wong Shel Dern</h3>
             <p>Aspiring software developer</p>
         </div>
@@ -33,19 +37,24 @@
             <div class="mb-5" id="About">
                 <h4 class="h4">About</h4>
                 <p>
-                    Currently, I am a computer science student of Class of 2028 in Singapore University of Technology and Design. 
-                    My interests are full-stack web development, UI/UX design, artificial intelligence, especially computer vision.
+                    Currently, I am a computer science student of Class of 2028 in Singapore University of Technology
+                    and Design.
+                    My interests are full-stack web development, UI/UX design, artificial intelligence, especially
+                    computer vision.
                     Outside of school and work, I enjoy playing video games, drawing, and crocheting.
-                    <div class="pt-1 fs-2">
-                        <a class="text-muted" href="https://github.com/shellelelel" target="_blank"><i class="bi bi-github"></i></a> 
-                        <a class="text-muted" href="https://www.linkedin.com/in/shel-dern-wong" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </p> 
+                <div class="pt-1 fs-2">
+                    <a class="text-muted" href="https://github.com/shellelelel" target="_blank"><i
+                            class="bi bi-github"></i></a>
+                    <a class="text-muted" href="https://www.linkedin.com/in/shel-dern-wong" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+                </p>
             </div>
             <div class="mb-5" id="Projects">
                 <h4 class="h4">Projects</h4>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#hotelModal" style="cursor: pointer;">
+                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#hotelModal"
+                        style="cursor: pointer;">
                         Ascenda Hotel Booking
                     </p>
                     <p>May 2026 - Ongoing</p>
@@ -55,22 +64,48 @@
                     searching for hotels by name or country,
                     displaying more information about each hotel,
                     making a booking and paying using the Stripe API,
-                    viewing past bookings, and more. This web application is being developed with React in the frontend and Express.js in the backend
+                    viewing past bookings, and more. This web application is being developed with React in the frontend
+                    and Express.js in the backend
                 </p>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#gogglesModal" style="cursor: pointer;">
+                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#everflowModal"
+                        style="cursor: pointer;">
+                        Everflow - Expense Tracker
+                    </p>
+                    <p>Jan 2026 - May 2026</p>
+                </div>
+                <p>
+                    This project features a Java-based expense tracking application, designed to support comprehensive
+                    personal financial management. The core functionalities of said application include the creation,
+                    modification, and deletion of transactions, as well as customizable month-by-month budget planning.
+                    Users are able to define and manage their income and expense categories, allowing for structured and
+                    flexible financial organization. The system also supports recurring payments to track subscriptions
+                    and incorporates goal-setting features using streaks to assist users in achieving specific financial
+                    targets.
+                    Recorded transactions are displayed in descending order by default in charts, emphasizing users’
+                    largest expenditures. This design choice allows users to quickly identify major spending patterns
+                    and gain insights into their financial habits, without having to manually review transactional
+                    records.
+                </p>
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#gogglesModal"
+                        style="cursor: pointer;">
                         Safety AR Goggles
                     </p>
                     <p>May 2025 - Aug 2025</p>
                 </div>
                 <p>
-                    Our prototype goggles aim to promote safety in the school's Fabrication Laboratory (FabLab) and 
-                    make FabLab users more independent and confident using the equipment. <br> 
-                    The live feed from the ESP32 camera mounted on a bandsaw is read by the YoloV5 model and the model detects if the user's hand 
-                    is getting too close to the saw, prompting a warning on the screen of the safety goggles along with haptic feedback. <br>
-                    To prepare the training data, we took over 300 images of users' hand on the bandsaw working on a project, 
-                    and manually marked out where the hand is on the working area. I then fed the training data 
-                    to YoloV5, allowing the model to output a warning to a server, alerting the user with visual and haptic warning.
+                    Our prototype goggles aim to promote safety in the school's Fabrication Laboratory (FabLab) and
+                    make FabLab users more independent and confident using the equipment. <br>
+                    The live feed from the ESP32 camera mounted on a bandsaw is read by the YoloV5 model and the model
+                    detects if the user's hand
+                    is getting too close to the saw, prompting a warning on the screen of the safety goggles along with
+                    haptic feedback. <br>
+                    To prepare the training data, we took over 300 images of users' hand on the bandsaw working on a
+                    project,
+                    and manually marked out where the hand is on the working area. I then fed the training data
+                    to YoloV5, allowing the model to output a warning to a server, alerting the user with visual and
+                    haptic warning.
                     You can see more <a href="https://github.com/shellelelel/DTI-2025/tree/model/yolov5">here</a>.
 
                 </p>
@@ -81,22 +116,29 @@
                     <p>July 2024 - Aug 2024</p>
                 </div>
                 <p>
-                    This website is a searcher for potential buyers of laptop with ARM architecture and Window OS - which does not support all softwares made for the typical x64 architecture - to check
-                    if the availability of the softwares they use daily, and if it is not available, the date that it would become available. This helps buyers to make informed decisions before
-                    purchasing an unfamiliar architecture system. This website was also meant to complement <a href="https://www.worksonwoa.com/en/games/">Windows on Arm Ready Software</a> 
-                    as we want to provide more than just games, such as Microsoft Suites, Adobe Creative Cloud Application, and more. Unfortunately, this website is not longer maintained and active.
+                    This website is a searcher for potential buyers of laptop with ARM architecture and Window OS -
+                    which does not support all softwares made for the typical x64 architecture - to check
+                    if the availability of the softwares they use daily, and if it is not available, the date that it
+                    would become available. This helps buyers to make informed decisions before
+                    purchasing an unfamiliar architecture system. This website was also meant to complement <a
+                        href="https://www.worksonwoa.com/en/games/">Windows on Arm Ready Software</a>
+                    as we want to provide more than just games, such as Microsoft Suites, Adobe Creative Cloud
+                    Application, and more. Unfortunately, this website is not longer maintained and active.
                     You can see more <a href="https://github.com/shellelelel/windowsarmchecker-frontend.git">here</a>.
                 </p>
                 <div class="d-flex justify-content-between">
-                    <p class="fw-bold mb-0"  data-bs-toggle="modal" data-bs-target="#chatbotModal">
+                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#chatbotModal">
                         Chatbot for Caregivers of people with autism
                     </p>
                     <p>May 2025 - Aug 2025</p>
                 </div>
                 <p>
-                    This customised ChatGPT provides caregivers of people with autism with support, tips, and resources. As this was made before CustomGPT was available widely for free, we
-                    collated relevant caregiver information from SGEnable in a knowledge retrieval system, and feed the relevant chunks to GPT-3.5, along with individualised prompt based on the user's
-                    input. Together with a team of 3 on the web development side of the project, we made the UI and UX to access the chatbot. The frontend was implemented using HTML, CSS, Bootstrap 5,
+                    This customised ChatGPT provides caregivers of people with autism with support, tips, and resources.
+                    As this was made before CustomGPT was available widely for free, we
+                    collated relevant caregiver information from SGEnable in a knowledge retrieval system, and feed the
+                    relevant chunks to GPT-3.5, along with individualised prompt based on the user's
+                    input. Together with a team of 3 on the web development side of the project, we made the UI and UX
+                    to access the chatbot. The frontend was implemented using HTML, CSS, Bootstrap 5,
                     while the backend connecting to the chatbot was made using Javascript.
                     You can see more <a href="https://github.com/shellelelel/fyp-group-3A61" target="_blank">here</a>.
                 </p>
@@ -106,8 +148,10 @@
                 <div class="row mb-sm-2">
                     <p class="fw-bold col-sm-12 col-lg-2 m-sm-0">Python</p>
                     <div class="col-lg-10 col-sm-12 pt-lg-2">
-                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,50 +159,60 @@
                 <div class="row mb-sm-2">
                     <p class="fw-bold col-sm-12 col-lg-2 m-sm-0">HTML</p>
                     <div class="col-lg-10 col-sm-12 pt-lg-2">
-                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
+                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-sm-2">
                     <p class="fw-bold col-sm-12 col-lg-2 m-sm-0">CSS</p>
                     <div class="col-lg-10 col-sm-12 pt-lg-2">
-                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-sm-2">
                     <p class="fw-bold col-sm-12 col-lg-2 m-sm-0">Bootstrap</p>
                     <div class="col-lg-10 col-sm-12 pt-lg-2">
-                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%"></div>
+                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-sm-2">
                     <p class="fw-bold col-sm-12 col-lg-2 m-sm-0">Java</p>
                     <div class="col-lg-10 col-sm-12 pt-lg-2">
-                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 45%"></div>
+                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="45"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 45%">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mb-sm-2">
                     <p class="fw-bold col-sm-12 col-lg-2 m-sm-0">Javascript</p>
                     <div class="col-lg-10 col-sm-12 pt-lg-2">
-                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"></div>
+                        <div class="progress " role="progressbar" aria-label="Basic example" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <p>React + Vite, Axios, Express.js</p>
-            
+
             </div>
         </div>
     </div>
 
-    <div class="modal modal-xl"  id="gogglesModal" tabindex="-1" aria-labelledby="gogglesModalLabel" aria-hidden="true">
+    <div class="modal modal-xl" id="gogglesModal" tabindex="-1" aria-labelledby="gogglesModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -167,38 +221,47 @@
                 </div>
                 <div class="modal-body">
                     <h3>Problem Statement</h3>
-                    <p>How can we make the Fabrication Laboratory safer and more independent for users to operate equipment?</p>
+                    <p>How can we make the Fabrication Laboratory safer and more independent for users to operate
+                        equipment?</p>
                     <div id="dtiCarousel" class="carousel slide carousel-dark">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="image/dticriticalimg.png" class="d-block w-100" alt="Critical image of the Safety Goggles">
+                                <img src="image/dti/dticriticalimg.png" class="d-block w-100"
+                                    alt="Critical image of the Safety Goggles">
                             </div>
                             <div class="carousel-item">
-                                <img src="image/dti.png" class="d-block w-100" alt="Overview of project">
+                                <img src="image/dti/dti.png" class="d-block w-100" alt="Overview of project">
                             </div>
                             <div class="carousel-item">
-                                <img src="image/dti_irl.jpg" class="d-block w-100" alt="Our project showcased in the school's library">
+                                <img src="image/dti/dti_irl.jpg" class="d-block w-100"
+                                    alt="Our project showcased in the school's library">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#dtiCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dtiCarousel"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#dtiCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#dtiCarousel"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-                        </div>
+                    </div>
                     <h3>Project Background</h3>
-                    <p>This project was developed to promote safety in the school's Fabrication Laboratory (FabLab) and make FabLab users more independent and confident using the equipment. 
-                    The prototype goggles utilize computer vision to detect hazardous situations in real-time and alert users immediately.</p>
+                    <p>This project was developed to promote safety in the school's Fabrication Laboratory (FabLab) and
+                        make FabLab users more independent and confident using the equipment.
+                        The prototype goggles utilize computer vision to detect hazardous situations in real-time and
+                        alert users immediately.</p>
                     <h3>Tech Stack</h3>
                     <p>Hardware: ESP32 camera</p>
                     <p>Machine Learning: YoloV5 for object detection</p>
                     <p>Alert System: Visual and haptic feedback</p>
                     <h3>How It Works</h3>
-                    <p>The live feed from the ESP32 camera mounted on a bandsaw is read by the YoloV5 model. The model detects if the user's hand 
-                    is getting too close to the saw, prompting a warning on the screen of the safety goggles along with haptic feedback behind the ears.</p>
+                    <p>The live feed from the ESP32 camera mounted on a bandsaw is read by the YoloV5 model. The model
+                        detects if the user's hand
+                        is getting too close to the saw, prompting a warning on the screen of the safety goggles along
+                        with haptic feedback behind the ears.</p>
                     <h3>Development Process</h3>
                     <ul>
                         <li>Collected over 300 images of users' hands on the bandsaw working on projects</li>
@@ -206,13 +269,14 @@
                         <li>Trained YoloV5 model with the annotated dataset</li>
                         <li>Integrated model output with server to alert users with visual and haptic warnings</li>
                     </ul>
-                    <p>You can see more <a href="https://github.com/shellelelel/DTI-2025/tree/model/yolov5" target="_blank">here</a>.</p>
+                    <p>You can see more <a href="https://github.com/shellelelel/DTI-2025/tree/model/yolov5"
+                            target="_blank">here</a>.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal modal-xl"  id="armModal" tabindex="-1" aria-labelledby="armModalLabel" aria-hidden="true">
+    <div class="modal modal-xl" id="armModal" tabindex="-1" aria-labelledby="armModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -221,20 +285,29 @@
                 </div>
                 <div class="modal-body">
                     <h3>Problem Statement</h3>
-                    <p>How can buyers of ARM-based Windows laptops determine software compatibility before making a purchase?</p>
+                    <p>How can buyers of ARM-based Windows laptops determine software compatibility before making a
+                        purchase?</p>
                     <h3>Project Background</h3>
-                    <p>This website is a searcher for potential buyers of laptops with ARM architecture and Windows OS. ARM-based Windows devices don't support all software made for the typical x64 architecture, 
-                    which can be a significant barrier to adoption. This tool helps buyers check the availability of the software they use daily and find out when unavailable software will become available.</p>
+                    <p>This website is a searcher for potential buyers of laptops with ARM architecture and Windows OS.
+                        ARM-based Windows devices don't support all software made for the typical x64 architecture,
+                        which can be a significant barrier to adoption. This tool helps buyers check the availability of
+                        the software they use daily and find out when unavailable software will become available.</p>
                     <h3>Purpose</h3>
-                    <p>This project was designed to complement <a href="https://www.worksonwoa.com/en/games/" target="_blank">Windows on Arm Ready Software</a>. While that site had initially focused primarily on games, 
-                    this project aimed to provide more comprehensive coverage including Microsoft Suites, Adobe Creative Cloud applications, and more.</p>
+                    <p>This project was designed to complement <a href="https://www.worksonwoa.com/en/games/"
+                            target="_blank">Windows on Arm Ready Software</a>. While that site had initially focused
+                        primarily on games,
+                        this project aimed to provide more comprehensive coverage including Microsoft Suites, Adobe
+                        Creative Cloud applications, and more.</p>
                     <h3>Tech Stack</h3>
                     <p>Frontend: HTML, CSS, JavaScript</p>
                     <p>Backend: Python to read the Excel sheet containing list of applications</p>
                     <h3>Status</h3>
-                    <p>Currently, this website's development has ceased as the original site has expanded to showcase more software categories. 
-                        However, it served as a valuable resource during the early adoption phase of ARM-based Windows laptops.</p>
-                    <p>You can see more <a href="https://github.com/shellelelel/windowsarmchecker-frontend.git" target="_blank">here</a>.</p>
+                    <p>Currently, this website's development has ceased as the original site has expanded to showcase
+                        more software categories.
+                        However, it served as a valuable resource during the early adoption phase of ARM-based Windows
+                        laptops.</p>
+                    <p>You can see more <a href="https://github.com/shellelelel/windowsarmchecker-frontend.git"
+                            target="_blank">here</a>.</p>
                 </div>
             </div>
         </div>
@@ -249,9 +322,12 @@
                 </div>
                 <div class="modal-body">
                     <h3>Problem Statement</h3>
-                    <p>How can Ascenda Loyalty provide a fast and intuitive hotel booking experience with search, booking, and payment features?</p>
+                    <p>How can Ascenda Loyalty provide a fast and intuitive hotel booking experience with search,
+                        booking, and payment features?</p>
                     <h3>Project Background</h3>
-                    <p>This project is part of the Ascenda Loyalty platform. It allows users to search for hotels, view details, make bookings, and pay with Stripe. The goal is to create a full-featured hotel booking web application that supports hotel discovery and reservation management.</p>
+                    <p>This project is part of the Ascenda Loyalty platform. It allows users to search for hotels, view
+                        details, make bookings, and pay with Stripe. The goal is to create a full-featured hotel booking
+                        web application that supports hotel discovery and reservation management.</p>
                     <h3>Features</h3>
                     <ul>
                         <li>Search for hotels by name or country</li>
@@ -264,13 +340,93 @@
                     <p>Backend: Express.js</p>
                     <p>Payments: Stripe API</p>
                     <h3>Status</h3>
-                    <p>The application is currently under development and continues to receive new features that improve hotel search, booking flow, and payment handling.</p>
+                    <p>The application is currently under development and continues to receive new features that improve
+                        hotel search, booking flow, and payment handling.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal modal-xl"  id="chatbotModal" tabindex="-1" aria-labelledby="gogglesModalLabel" aria-hidden="true">
+    <div class="modal modal-xl" id="everflowModal" tabindex="-1" aria-labelledby="everflowModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="everflowModalLabel">Everflow - Expense Tracker</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Problem Statement</h3>
+                    <p>How can users better understand and manage their personal finances with intuitive transaction tracking and budget planning?</p>
+                    <div id="everflowCarousel" class="carousel slide carousel-dark">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/infosys/infosysposter.png" class="d-block w-100"
+                                    alt="Everflow Poster">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/homepage.png" class="d-block w-100" alt="Homepage">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/addtrans.png" class="d-block w-100"
+                                    alt="Add Transaction">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/charts.png" class="d-block w-100"
+                                    alt="Charts and Analytics">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/budget.png" class="d-block w-100"
+                                    alt="Budget Planning">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/Category.png" class="d-block w-100"
+                                    alt="Category Management">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/recur.png" class="d-block w-100"
+                                    alt="Recurring Payments">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/streaks.png" class="d-block w-100"
+                                    alt="Goal Streaks">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/infosys/search.png" class="d-block w-100"
+                                    alt="Search Feature">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#everflowCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#everflowCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <h3>Project Background</h3>
+                    <p>Everflow is a comprehensive Java-based expense tracking application designed to support personal financial management. The application empowers users to take control of their finances through intuitive transaction management and flexible budget planning.</p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Create, modify, and delete transactions with ease</li>
+                        <li>Customizable month-by-month budget planning</li>
+                        <li>Define and manage income and expense categories</li>
+                        <li>Recurring payment tracking for subscriptions</li>
+                        <li>Goal-setting features with streak tracking</li>
+                        <li>Visual charts displaying expenses in descending order to highlight spending patterns</li>
+                    </ul>
+                    <h3>Tech Stack</h3>
+                    <p>This application was developed with pure Java, XML, and an external chart library. As the primary goal of this project is to learn Java, common Android application development frameworks were not used.</p>
+                    <h3>Design Philosophy</h3>
+                    <p>Recorded transactions are displayed in descending order by default in charts, emphasizing users' largest expenditures. This design choice allows users to quickly identify major spending patterns and gain insights into their financial habits without having to manually review transactional records.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-xl" id="chatbotModal" tabindex="-1" aria-labelledby="gogglesModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -279,14 +435,18 @@
                 </div>
                 <div class="modal-body">
                     <h3>Problem Statement</h3>
-                    <p>How can we provide caregivers of people with disability with a one-stop centre for information on caring for themselves and their patient or kin?</p>
-                    <img src="image/chatbotui.png" class="demo-pic"/>
+                    <p>How can we provide caregivers of people with disability with a one-stop centre for information on
+                        caring for themselves and their patient or kin?</p>
+                    <img src="image/chatbotui.png" class="demo-pic" />
                     <h3>Project Background</h3>
-                    <p>For my final year project in polytechnic, my group collaborated with SG Enable to create a chatbot to assist caregivers of individuals with autism<br>
-                        Despite its name, all is welcomed to use the chatbot to learn more about providing care to people with autism or demystify autism. The main goal of
-                    this chatbot is to help caregivers retrieve information needed for their patient quickly. 
-                    Without this chatbot, caregivers have to navigate the Enabling Guide by SG Enable, 
-                    which is comprehensive but can be troublesome to navigate if the user did not know where to look</p>
+                    <p>For my final year project in polytechnic, my group collaborated with SG Enable to create a
+                        chatbot to assist caregivers of individuals with autism<br>
+                        Despite its name, all is welcomed to use the chatbot to learn more about providing care to
+                        people with autism or demystify autism. The main goal of
+                        this chatbot is to help caregivers retrieve information needed for their patient quickly.
+                        Without this chatbot, caregivers have to navigate the Enabling Guide by SG Enable,
+                        which is comprehensive but can be troublesome to navigate if the user did not know where to look
+                    </p>
                     <h3>Tech Stack</h3>
                     <p>Frontend: Vanilla JS, HTML, CSS, Bootstrap 5</p>
                     <p>Backend: Express.js</p>
@@ -304,7 +464,10 @@
             </div>
         </div>
     </div>
- 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
