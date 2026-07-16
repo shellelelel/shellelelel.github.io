@@ -44,7 +44,25 @@
             </div>
             <div class="mb-5" id="Projects">
                 <h4 class="h4">Projects</h4>
-                <p class="fw-bold mb-0">Safety AR Goggles</p>
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#hotelModal" style="cursor: pointer;">
+                        Ascenda Hotel Booking
+                    </p>
+                    <p>May 2026 - Ongoing</p>
+                </div>
+                <p>
+                    Ascenda Loyalty provides hotel booking platforms and we are implementing features such as:
+                    searching for hotels by name or country,
+                    displaying more information about each hotel,
+                    making a booking and paying using the Stripe API,
+                    viewing past bookings, and more. This web application is being developed with React in the frontend and Express.js in the backend
+                </p>
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#gogglesModal" style="cursor: pointer;">
+                        Safety AR Goggles
+                    </p>
+                    <p>May 2025 - Aug 2025</p>
+                </div>
                 <p>
                     Our prototype goggles aim to promote safety in the school's Fabrication Laboratory (FabLab) and 
                     make FabLab users more independent and confident using the equipment. <br> 
@@ -56,7 +74,12 @@
                     You can see more <a href="https://github.com/shellelelel/DTI-2025/tree/model/yolov5">here</a>.
 
                 </p>
-                <p class="fw-bold mb-0">Does this work on ARM</p>
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bold mb-0" data-bs-toggle="modal" data-bs-target="#armModal" style="cursor: pointer;">
+                        Does this work on ARM
+                    </p>
+                    <p>July 2024 - Aug 2024</p>
+                </div>
                 <p>
                     This website is a searcher for potential buyers of laptop with ARM architecture and Window OS - which does not support all softwares made for the typical x64 architecture - to check
                     if the availability of the softwares they use daily, and if it is not available, the date that it would become available. This helps buyers to make informed decisions before
@@ -64,13 +87,18 @@
                     as we want to provide more than just games, such as Microsoft Suites, Adobe Creative Cloud Application, and more. Unfortunately, this website is not longer maintained and active.
                     You can see more <a href="https://github.com/shellelelel/windowsarmchecker-frontend.git">here</a>.
                 </p>
-
-                <p class="fw-bold mb-0">Chatbot for Caregivers of people with autism</p>
+                <div class="d-flex justify-content-between">
+                    <p class="fw-bold mb-0"  data-bs-toggle="modal" data-bs-target="#chatbotModal">
+                        Chatbot for Caregivers of people with autism
+                    </p>
+                    <p>May 2025 - Aug 2025</p>
+                </div>
                 <p>
                     This customised ChatGPT provides caregivers of people with autism with support, tips, and resources. As this was made before CustomGPT was available widely for free, we
                     collated relevant caregiver information from SGEnable in a knowledge retrieval system, and feed the relevant chunks to GPT-3.5, along with individualised prompt based on the user's
                     input. Together with a team of 3 on the web development side of the project, we made the UI and UX to access the chatbot. The frontend was implemented using HTML, CSS, Bootstrap 5,
-                    while the backend connecting to the chatbot was made using Javascript. 
+                    while the backend connecting to the chatbot was made using Javascript.
+                    You can see more <a href="https://github.com/shellelelel/fyp-group-3A61" target="_blank">here</a>.
                 </p>
             </div>
             <div class="mb-5" id="Skills">
@@ -83,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <p>Flask, Keras, PyTorch</p>
+                <p>Pandas, Numpy, Flask, Keras, PyTorch</p>
                 <div class="row mb-sm-2">
                     <p class="fw-bold col-sm-12 col-lg-2 m-sm-0">HTML</p>
                     <div class="col-lg-10 col-sm-12 pt-lg-2">
@@ -124,11 +152,159 @@
                         </div>
                     </div>
                 </div>
-                <p>Axios, Express.js</p>
+                <p>React + Vite, Axios, Express.js</p>
             
             </div>
         </div>
     </div>
+
+    <div class="modal modal-xl"  id="gogglesModal" tabindex="-1" aria-labelledby="gogglesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title">Safety AR Goggles</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Problem Statement</h3>
+                    <p>How can we make the Fabrication Laboratory safer and more independent for users to operate equipment?</p>
+                    <div id="dtiCarousel" class="carousel slide carousel-dark">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/dticriticalimg.png" class="d-block w-100" alt="Critical image of the Safety Goggles">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/dti.png" class="d-block w-100" alt="Overview of project">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/dti_irl.jpg" class="d-block w-100" alt="Our project showcased in the school's library">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dtiCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dtiCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    <h3>Project Background</h3>
+                    <p>This project was developed to promote safety in the school's Fabrication Laboratory (FabLab) and make FabLab users more independent and confident using the equipment. 
+                    The prototype goggles utilize computer vision to detect hazardous situations in real-time and alert users immediately.</p>
+                    <h3>Tech Stack</h3>
+                    <p>Hardware: ESP32 camera</p>
+                    <p>Machine Learning: YoloV5 for object detection</p>
+                    <p>Alert System: Visual and haptic feedback</p>
+                    <h3>How It Works</h3>
+                    <p>The live feed from the ESP32 camera mounted on a bandsaw is read by the YoloV5 model. The model detects if the user's hand 
+                    is getting too close to the saw, prompting a warning on the screen of the safety goggles along with haptic feedback behind the ears.</p>
+                    <h3>Development Process</h3>
+                    <ul>
+                        <li>Collected over 300 images of users' hands on the bandsaw working on projects</li>
+                        <li>Manually annotated images to mark hand locations on the working area</li>
+                        <li>Trained YoloV5 model with the annotated dataset</li>
+                        <li>Integrated model output with server to alert users with visual and haptic warnings</li>
+                    </ul>
+                    <p>You can see more <a href="https://github.com/shellelelel/DTI-2025/tree/model/yolov5" target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-xl"  id="armModal" tabindex="-1" aria-labelledby="armModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="armModalLabel">Does this work on ARM</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Problem Statement</h3>
+                    <p>How can buyers of ARM-based Windows laptops determine software compatibility before making a purchase?</p>
+                    <h3>Project Background</h3>
+                    <p>This website is a searcher for potential buyers of laptops with ARM architecture and Windows OS. ARM-based Windows devices don't support all software made for the typical x64 architecture, 
+                    which can be a significant barrier to adoption. This tool helps buyers check the availability of the software they use daily and find out when unavailable software will become available.</p>
+                    <h3>Purpose</h3>
+                    <p>This project was designed to complement <a href="https://www.worksonwoa.com/en/games/" target="_blank">Windows on Arm Ready Software</a>. While that site had initially focused primarily on games, 
+                    this project aimed to provide more comprehensive coverage including Microsoft Suites, Adobe Creative Cloud applications, and more.</p>
+                    <h3>Tech Stack</h3>
+                    <p>Frontend: HTML, CSS, JavaScript</p>
+                    <p>Backend: Python to read the Excel sheet containing list of applications</p>
+                    <h3>Status</h3>
+                    <p>Currently, this website's development has ceased as the original site has expanded to showcase more software categories. 
+                        However, it served as a valuable resource during the early adoption phase of ARM-based Windows laptops.</p>
+                    <p>You can see more <a href="https://github.com/shellelelel/windowsarmchecker-frontend.git" target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-xl" id="hotelModal" tabindex="-1" aria-labelledby="hotelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="hotelModalLabel">Ascenda Hotel Booking</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Problem Statement</h3>
+                    <p>How can Ascenda Loyalty provide a fast and intuitive hotel booking experience with search, booking, and payment features?</p>
+                    <h3>Project Background</h3>
+                    <p>This project is part of the Ascenda Loyalty platform. It allows users to search for hotels, view details, make bookings, and pay with Stripe. The goal is to create a full-featured hotel booking web application that supports hotel discovery and reservation management.</p>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Search for hotels by name or country</li>
+                        <li>Display hotel details and available room options</li>
+                        <li>Book hotels and complete payments using Stripe</li>
+                        <li>View past bookings and manage reservations</li>
+                    </ul>
+                    <h3>Tech Stack</h3>
+                    <p>Frontend: React with Vite</p>
+                    <p>Backend: Express.js</p>
+                    <p>Payments: Stripe API</p>
+                    <h3>Status</h3>
+                    <p>The application is currently under development and continues to receive new features that improve hotel search, booking flow, and payment handling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-xl"  id="chatbotModal" tabindex="-1" aria-labelledby="gogglesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title">Chatbot for Caregivers of people with autism</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Problem Statement</h3>
+                    <p>How can we provide caregivers of people with disability with a one-stop centre for information on caring for themselves and their patient or kin?</p>
+                    <img src="image/chatbotui.png" class="demo-pic"/>
+                    <h3>Project Background</h3>
+                    <p>For my final year project in polytechnic, my group collaborated with SG Enable to create a chatbot to assist caregivers of individuals with autism<br>
+                        Despite its name, all is welcomed to use the chatbot to learn more about providing care to people with autism or demystify autism. The main goal of
+                    this chatbot is to help caregivers retrieve information needed for their patient quickly. 
+                    Without this chatbot, caregivers have to navigate the Enabling Guide by SG Enable, 
+                    which is comprehensive but can be troublesome to navigate if the user did not know where to look</p>
+                    <h3>Tech Stack</h3>
+                    <p>Frontend: Vanilla JS, HTML, CSS, Bootstrap 5</p>
+                    <p>Backend: Express.js</p>
+                    <p>Chatbot: Python</p>
+                    <h3>More about the project</h3>
+                    <p>Beyond the chatting interface, the website includes:</p>
+                    <ul>
+                        <li>Calendar for task tracking for busy caretakers</li>
+                        <li>Collection of user saved chatbot responses</li>
+                        <li>Speech to text for input</li>
+                        <li>Rating of responses + feedback channel</li>
+                        <li>Editing of query + pagination of response versions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>  
 </body>
 </html>
